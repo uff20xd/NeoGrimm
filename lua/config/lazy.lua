@@ -18,7 +18,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 require("lazy").setup({
 	spec = {
 		{import = "plugins"},
-	}
-	install = {colorscheme = {"Habamax"}}
-	checker = {enabled = true}
+	},
+	install = {colorscheme = {"Habamax"}},
+	checker = {enabled = true},
 })
