@@ -1,2 +1,2 @@
 require "NeoHop"
---require("config.lazy")
+require("config.lazy")
