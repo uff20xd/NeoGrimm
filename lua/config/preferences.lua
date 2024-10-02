@@ -1,4 +1,4 @@
-vim.cmd("set numbers")
+vim.cmd("set number")
 vim.cmd("set relativenumbers")
 vim.cmd("set noexpandtab")
 vim.cmd("set tabstop = 4")
