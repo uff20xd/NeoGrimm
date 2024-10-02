@@ -1,2 +1,2 @@
-lol = {"fully"}
+lol = {}
 return lol
