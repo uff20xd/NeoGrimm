@@ -1,2 +1,2 @@
 vim.g.mapleader = " "
-vim.api.nvim_set_keymap("n","<leader>ex",":Ex","<noremap>)
+vim.api.nvim_set_keymap("n","<leader>ex",":Ex","<noremap>")
