@@ -1,0 +1,2 @@
+lol = {"fully"}
+return lol
