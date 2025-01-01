@@ -1,8 +1,9 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function() 
-		require("lspconfig").lua_ls.setup{ settings = {diagnostics = {globals = {"vim"}}}}
-		require("lspconfig").nixd.setup({
+		lspconfig = require("lspconfig")
+		lspconfig.lua_ls.setup{ settings = {diagnostics = {globals = {"vim"}}}}
+		lspconfig.nixd.setup({
 		  cmd = { "nixd" },
 		  settings = {
 		    nixd = {
@@ -23,9 +24,12 @@ return {
 		    },
 		  },
 		})
-		require('lspconfig').rust-analyzer.setup {
-    		capabilities = capabilities
-  		}
+		lspconfig.rust_analyzer.setup {
+		  -- Server-specific settings. See `:help lspconfig-setup`
+		  settings = {
+		    ['rust-analyzer'] = {},
+		  },
+		}
 		vim.cmd(":LspStart")
 	end,
 }
