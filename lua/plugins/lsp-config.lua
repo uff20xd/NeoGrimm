@@ -23,7 +23,7 @@ return {
 		    },
 		  },
 		})
-		require('lspconfig')['rust_analyzer'].setup {
+		require('lspconfig').rust-analyzer.setup {
     		capabilities = capabilities
   		}
 		vim.cmd(":LspStart")
